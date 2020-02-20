@@ -1,0 +1,10 @@
+Jul-05 16:05:45.654 [main] DEBUG nextflow.cli.Launcher - $> nextflow run -profile test_nhej,docker . -resume
+Jul-05 16:05:45.756 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.04.0
+Jul-05 16:05:45.866 [main] DEBUG nextflow.scm.AssetManager - Project manifest does not exist: ./nextflow.config (No such file or directory)
+Jul-05 16:05:45.880 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Missing project main script: ./main.nf
+	at nextflow.scm.AssetManager.getMainScriptFile(AssetManager.groovy:391)
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:283)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:219)
+	at nextflow.cli.Launcher.run(Launcher.groovy:449)
+	at nextflow.cli.Launcher.main(Launcher.groovy:626)
