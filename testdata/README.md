@@ -21,7 +21,7 @@
 ### One-liner to create chr19 testdata
 
 ```bash
-for BAM in $(ls *subsample*out.bam); do SORTED=$(echo $BAM | sed s:.bam:.sorted.bam:) ; echo $SORTED ; samtools sort -o $SORTED -O bam -@ 4 $BAM ; samtools index $SORTED ; CHR19=$(echo $SORTED | sed s:.sorted.bam:.sorted.chr19.bam:); samtools view -bh $SORTED chr19 > $CHR19 ; R2=$(echo $BAM | cut -f1 -d '.')_mm10_chr19_R2.fastq.gz ; samtools fastq $CHR19 > $R2 ; echo $R2 ; done
+for BAM in $(ls *out.bam); do SORTED=$(echo $BAM | sed s:.bam:.sorted.bam:) ; echo $SORTED ; samtools sort -o $SORTED -O bam -@ 4 $BAM ; samtools index $SORTED ; CHR19=$(echo $SORTED | sed s:.sorted.bam:.sorted.chr19.bam:); samtools view -bh $SORTED chr19 > $CHR19 ; R2=$(echo $BAM | cut -f1 -d '.'| sed s:T1::)_mm10_chr19_R2.fastq.gz ; samtools fastq $CHR19 | gzip -c > $R2 ; echo $R2 ; done
 ```
 
 ### One-liner to create chrM testdata
