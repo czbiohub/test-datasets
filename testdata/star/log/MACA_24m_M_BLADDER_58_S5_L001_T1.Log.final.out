@@ -1,0 +1,37 @@
+                                 Started job on |	Jun 02 01:50:44
+                             Started mapping on |	Jun 02 02:02:16
+                                    Finished on |	Jun 02 02:14:42
+       Mapping speed, Million of reads per hour |	6.53
+
+                          Number of input reads |	1352511
+                      Average input read length |	90
+                                    UNIQUE READS:
+                   Uniquely mapped reads number |	205729
+                        Uniquely mapped reads % |	15.21%
+                          Average mapped length |	88.27
+                       Number of splices: Total |	18954
+            Number of splices: Annotated (sjdb) |	15924
+                       Number of splices: GT/AG |	16596
+                       Number of splices: GC/AG |	164
+                       Number of splices: AT/AC |	9
+               Number of splices: Non-canonical |	2185
+                      Mismatch rate per base, % |	2.87%
+                         Deletion rate per base |	0.06%
+                        Deletion average length |	1.44
+                        Insertion rate per base |	0.07%
+                       Insertion average length |	1.94
+                             MULTI-MAPPING READS:
+        Number of reads mapped to multiple loci |	25890
+             % of reads mapped to multiple loci |	1.91%
+        Number of reads mapped to too many loci |	2969
+             % of reads mapped to too many loci |	0.22%
+                                  UNMAPPED READS:
+  Number of reads unmapped: too many mismatches |	0
+       % of reads unmapped: too many mismatches |	0.00%
+            Number of reads unmapped: too short |	1113338
+                 % of reads unmapped: too short |	82.32%
+                Number of reads unmapped: other |	693
+                     % of reads unmapped: other |	0.05%
+                                  CHIMERIC READS:
+                       Number of chimeric reads |	4640
+                            % of chimeric reads |	0.34%

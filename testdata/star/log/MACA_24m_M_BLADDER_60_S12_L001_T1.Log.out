@@ -1,0 +1,169 @@
+STAR version=2.7.5a
+STAR compilation time,server,dir=Tue Jun 16 12:17:16 EDT 2020 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR --genomeDir star --readFilesIn MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz --runThreadN 2 --outFileNamePrefix MACA_24m_M_BLADDER_60_S12_L001_T1. --sjdbGTFfile GCF_000001635.26_GRCm38.p6_genomic.chr19.gtf --outSAMattrRGline ID:MACA_24m_M_BLADDER_60_S12_L001_T1 CN:czbiohub SM:MACA_24m_M_BLADDER_60_S12_L001_T1 --twopassMode Basic --alignIntronMax 1000000 --outSAMtype BAM Unsorted --readFilesCommand zcat --outSAMattributes All --chimOutType WithinBAM SoftClip Junctions --chimJunctionOverhangMin 10 --chimSegmentReadGapMax 0 --chimOutJunctionFormat 1 --chimSegmentMin 12 --chimScoreJunctionNonGTAG -4 --chimNonchimScoreDropMin 1 --quantMode GeneCounts --outReadsUnmapped Fastx
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 MACA_24m_M_BLADDER_60_S12_L001_T1.
+###### All USER parameters from Command Line:
+genomeDir                     star     ~RE-DEFINED
+readFilesIn                   MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz        ~RE-DEFINED
+runThreadN                    2     ~RE-DEFINED
+outFileNamePrefix             MACA_24m_M_BLADDER_60_S12_L001_T1.     ~RE-DEFINED
+sjdbGTFfile                   GCF_000001635.26_GRCm38.p6_genomic.chr19.gtf     ~RE-DEFINED
+outSAMattrRGline              ID:MACA_24m_M_BLADDER_60_S12_L001_T1   CN:czbiohub   SM:MACA_24m_M_BLADDER_60_S12_L001_T1        ~RE-DEFINED
+twopassMode                   Basic     ~RE-DEFINED
+alignIntronMax                1000000     ~RE-DEFINED
+outSAMtype                    BAM   Unsorted        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+outSAMattributes              All        ~RE-DEFINED
+chimOutType                   WithinBAM   SoftClip   Junctions        ~RE-DEFINED
+chimJunctionOverhangMin       10     ~RE-DEFINED
+chimSegmentReadGapMax         0     ~RE-DEFINED
+chimOutJunctionFormat         1        ~RE-DEFINED
+chimSegmentMin                12     ~RE-DEFINED
+chimScoreJunctionNonGTAG      -4     ~RE-DEFINED
+chimNonchimScoreDropMin       1     ~RE-DEFINED
+quantMode                     GeneCounts        ~RE-DEFINED
+outReadsUnmapped              Fastx     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        2
+genomeDir                         star
+readFilesIn                       MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz   
+readFilesCommand                  zcat   
+outFileNamePrefix                 MACA_24m_M_BLADDER_60_S12_L001_T1.
+outReadsUnmapped                  Fastx
+outSAMtype                        BAM   Unsorted   
+outSAMattributes                  All   
+outSAMattrRGline                  ID:MACA_24m_M_BLADDER_60_S12_L001_T1   CN:czbiohub   SM:MACA_24m_M_BLADDER_60_S12_L001_T1   
+alignIntronMax                    1000000
+chimSegmentMin                    12
+chimScoreJunctionNonGTAG          -4
+chimJunctionOverhangMin           10
+chimOutType                       WithinBAM   SoftClip   Junctions   
+chimSegmentReadGapMax             0
+chimNonchimScoreDropMin           1
+chimOutJunctionFormat             1   
+sjdbGTFfile                       GCF_000001635.26_GRCm38.p6_genomic.chr19.gtf
+quantMode                         GeneCounts   
+twopassMode                       Basic
+
+-------------------------------
+##### Final effective command line:
+STAR   --runThreadN 2   --genomeDir star   --readFilesIn MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz      --readFilesCommand zcat      --outFileNamePrefix MACA_24m_M_BLADDER_60_S12_L001_T1.   --outReadsUnmapped Fastx   --outSAMtype BAM   Unsorted      --outSAMattributes All      --outSAMattrRGline ID:MACA_24m_M_BLADDER_60_S12_L001_T1   CN:czbiohub   SM:MACA_24m_M_BLADDER_60_S12_L001_T1      --alignIntronMax 1000000   --chimSegmentMin 12   --chimScoreJunctionNonGTAG -4   --chimJunctionOverhangMin 10   --chimOutType WithinBAM   SoftClip   Junctions      --chimSegmentReadGapMax 0   --chimNonchimScoreDropMin 1   --chimOutJunctionFormat 1      --sjdbGTFfile GCF_000001635.26_GRCm38.p6_genomic.chr19.gtf   --quantMode GeneCounts      --twopassMode Basic
+----------------------------------------
+
+Number of fastq files for each mate = 1
+
+   Input read files for mate 1 :
+-rw-r--r--    1 root     root      50395870 Jun  2 01:44 MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz
+
+   readsCommandsFile:
+exec > "MACA_24m_M_BLADDER_60_S12_L001_T1._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz"
+
+WARNING --outSAMattrRG defines a read group, therefore STAR will output RG attribute
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate   --runThreadN 12   --genomeDir star/   --genomeFastaFiles mm10_chrom19.fa      --genomeSAindexNbases 12   --limitGenomeGenerateRAM 90094313216   --sjdbGTFfile GCF_000001635.26_GRCm38.p6_genomic.chr19.gtf
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              mm10_chrom19.fa        ~RE-DEFINED
+genomeSAindexNbases           12     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   GCF_000001635.26_GRCm38.p6_genomic.chr19.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               63386509   494832165        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	chr19	61431566	0
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Wed Jun  2 01:45:23 2021
+
+Genome: size given as a parameter = 63386509
+SA: size given as a parameter = 494832165
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=12  nSAi=22369620
+nGenome=63386509;  nSAbyte=494832165
+GstrandBit=32   SA number of indices=119959312
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 63386509 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 63386509 bytes
+SA file size: 494832165 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 494832165 bytes
+Loading SAindex ... done: 97867203 bytes
+Finished loading the genome: Wed Jun  2 01:45:23 2021
+
+Processing splice junctions database sjdbN=8869,   pGe.sjdbOverhang=100 
+To accommodate alignIntronMax=1000000 redefined winBinNbits=18
+To accommodate alignIntronMax=1000000 and alignMatesGapMax=0, redefined winFlankNbins=4 and winAnchorDistNbins=8
+Jun 02 01:45:24   Loaded database junctions from the generated genome star//sjdbList.out.tab: 8869 total junctions
+
+Jun 02 01:45:24 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=GCF_000001635.26_GRCm38.p6_genomic.chr19.gtf, found:
+		3548 transcripts
+		38388 exons (non-collapsed)
+		8869 collapsed junctions
+Total junctions: 17738
+Jun 02 01:45:24 ..... finished GTF processing
+
+Jun 02 01:45:24   Finished preparing junctions
+Jun 02 01:45:24 ..... inserting junctions into the genome indices
+Jun 02 01:45:24   Finished SA search: number of new junctions=0, old junctions=8869
+Jun 02 01:45:24   Finished sorting SA indicesL nInd=0
+Genome size with junctions=63386509  61603840   1782669
+GstrandBit1=32   GstrandBit=32
+Jun 02 01:45:26   Finished inserting junction indices
+Jun 02 01:45:27   Finished SAi
+Jun 02 01:45:27 ..... finished inserting junctions into genome
+Created thread # 1
+Starting to map file # 0
+mate 1:   MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #0
+Completed: thread #1
+Joined thread # 1
+Jun 02 01:53:43   Loaded database junctions from the 1st pass file: MACA_24m_M_BLADDER_60_S12_L001_T1._STARpass1//SJ.out.tab: 18828 total junctions
+
+Jun 02 01:53:43   Finished preparing junctions
+Jun 02 01:53:43 ..... inserting junctions into the genome indices
+Jun 02 01:53:43   Finished SA search: number of new junctions=842, old junctions=8869
+Jun 02 01:53:43   Finished sorting SA indicesL nInd=336800
+Genome size with junctions=63555751  61603840   1951911
+GstrandBit1=32   GstrandBit=32
+Jun 02 01:53:46   Finished inserting junction indices
+Jun 02 01:53:46   Finished SAi
+Jun 02 01:53:46 ..... finished inserting junctions into genome
+
+   Input read files for mate 1 :
+-rw-r--r--    1 root     root      50395870 Jun  2 01:44 MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz
+
+   readsCommandsFile:
+exec > "MACA_24m_M_BLADDER_60_S12_L001_T1._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz"
+
+Opening the file: MACA_24m_M_BLADDER_60_S12_L001_T1._STARtmp//Chimeric.out.junction.thread0 ... ok
+Opening the file: MACA_24m_M_BLADDER_60_S12_L001_T1._STARtmp//Unmapped.out.mate1.thread0 ... ok
+Opening the file: MACA_24m_M_BLADDER_60_S12_L001_T1._STARtmp//Chimeric.out.junction.thread1 ... ok
+Opening the file: MACA_24m_M_BLADDER_60_S12_L001_T1._STARtmp//Unmapped.out.mate1.thread1 ... ok
+Created thread # 1
+Starting to map file # 0
+mate 1:   MACA_24m_M_BLADDER_60_S12_L001_T1.umi_extract_2.fastq.gz
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #0
+Completed: thread #1
+Joined thread # 1
+ALL DONE!
